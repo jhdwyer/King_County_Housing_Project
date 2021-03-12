@@ -41,6 +41,7 @@ Next steps include adding more relevant information to the data set which could 
  - data
  - images
  - notebooks
+ - Effects on King County Housing Prices.pdf
  - Final_King_County_Housing_Model.ipynb
  - Final_King_County_Predict_Housing.ipynb
  - READ.me
