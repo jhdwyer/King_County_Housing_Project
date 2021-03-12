@@ -14,7 +14,7 @@ Some findings include that houses on the waterfront, houses with higher grades, 
 
 <img width="782" alt="Screen Shot 2021-03-12 at 9 01 25 AM" src="https://user-images.githubusercontent.com/73671207/110950349-bb00b300-8311-11eb-8582-f638704afd65.png">
 
-Features not originially included in the dataset that are though to impact housing prices are generated using information provided in the data set. Some engineered features include yard size of the house, how many years since the house has been built or renovated, and whether the house is sold during peak months or non peak months. 
+Features not originially included in the dataset that are thought to impact housing prices are generated using information provided in the data set. Some engineered features include yard size of the house, how many years since the house has been built or renovated, and whether the house is sold during peak months or non peak months. 
 
 <img width="690" alt="Screen Shot 2021-03-12 at 9 06 21 AM" src="https://user-images.githubusercontent.com/73671207/110950783-44b08080-8312-11eb-9ca2-91d14f1b63cf.png">
 
@@ -25,7 +25,7 @@ An OLS model is generated from the prepped dataset to draw inferences on which f
 A more complex prediction model is genereated by using the information gathered above about which features impact price. Polynomials and interactions are generated to account for complicated relationships in the data for features deemed important. Some examples include how waterfront and square footage of living or zipcode interact, how grade and zipcode interact, and more. 
 
 ### Evaluate Model
-Model assumptions are checked using graphs to evaluate the model and better understand how to improve the model. Findings include that the residuals from the model are not homoscedastic and not normally distributed. To try and fix the normality issue and improve the prediction model, a non-linear transformation of the data is done with log transformation. The continuous features price, square footage of living, square footage of lot, square footage of living 15 and square footage of lot are selected to log to try and improve normality. Below is a graph representing the data after the log transformation is performed.
+Model assumptions are checked using graphs to evaluate the model and better understand how to improve the model. Findings include that the residuals from the model are not homoscedastic and not normally distributed. To try and fix the normality issue and improve the prediction model, a non-linear transformation of the data is done with log transformation. The continuous features price, square footage of living, square footage of lot, square footage of living 15 and square footage of lot 15 are selected to log to try and improve normality. Below is a graph representing the data after the log transformation is performed.
 
 <img width="648" alt="Screen Shot 2021-03-12 at 9 21 04 AM" src="https://user-images.githubusercontent.com/73671207/110952551-5eeb5e00-8314-11eb-88a9-e688c7ab847c.png">
 
@@ -35,7 +35,7 @@ With this transformation the root mean square error of the model drops from 142,
 Finally, some features selections are performed to select relevant features in the model to potentially create a more accurate model. After using the recursive feature elimation method as well as an F-test, the recursive feature model gives us the lowest rmse indicating it is the best model for predicting housing prices.  
 
 ## Next Steps
-Next steps include adding more relevant information to the data set which could help the accuracy of the model included information regarding crime rate, distances to popular locations, properties with pools and more. 
+Next steps include adding more relevant information to the data set which could help the accuracy of the model including information regarding crime rate, distances to popular locations, properties with pools and more. 
 
 ## Repository Structure
  - data
